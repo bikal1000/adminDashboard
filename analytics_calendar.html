@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Analytics Calendar</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+</head>
+
+<body>
+    <div class="wholepage">
+        <header>
+            <div class="tophead_container">
+                <div class="top_header">
+                    <figure class="main_logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="main logo">
+                        </a>
+                    </figure>
+                    <div class="top_navmenus">
+                        <input id="nav-toggle" type="checkbox" class="hidden" />
+                        <strong class="burger_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </strong>
+                        <ul class="nav_ul">
+                            <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+                            <li><a href="forecast.html"><i class="icon-forecast"></i>Forecast</a></li>
+                            <li class="active"><a href="analytics_calendar.html"><i class="icon-analytics"></i>Analytics</a></li>
+                            <li><a href="favourite.html"><i class="icon-favourites"></i>Favourites</a></li>
+                            <li><a href="help.html"><i class="icon-help"></i>Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="user_section">
+                        <div class="user_logo">
+                            <i class="fas fa-user"></i>
+                            <span>Hi Jerry!</span><i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="analytics">
+                <div class="bothead_container">
+                    <div class="secondary_menus">
+                        <ul class="sec_ul">
+                            <li><a href="analytics_regularkpi.html">Regular Giving KPIs</a> </li>
+                            <li><a href="analytics_installment.html">Regular Giving Performance (Installment View)</a></li>
+                            <li class="active"><a href="analytics_calendar.html">Regular Giving Performance (Calendar View)</a></li>
+                            <li><a href="data_quality.html">Data Quality</a></li>
+                            <li><a href="hall_of_fame.html">Hall of Fame</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_section">
+                    <input type="checkbox" name="checkbox" class="side_toggle">
+                    <label for="check"><i class="fas fa-arrow-right"></i></label>
+                    <div class="left_content">
+                        <div class="form-group">
+                            <label for="form_name">Date Range</label>
+                            <div class="selectdiv">
+                                 <input type="text" class="selfselect" name="daterange" value="01/01/2019 - 01/15/2019" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_name">Cohort Year</label>
+                            <div class="selectdiv">
+                                <select class="selfselect" id="sel1" name="sellist1">
+                                    <option>All</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="form_name">Transaction Year</label>
+                            <div class="selectdiv">
+                                <select class="selfselect" id="sel1" name="sellist1">
+                                    <option>All</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="twocol_section">
+                            <div class="form-group two_col">
+                                <label for="form_name">Channel</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group two_col">
+                                <label for="form_name">Campaign</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="twocol_section">
+                            <div class="form-group two_col">
+                                <label for="form_name">Appeal</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group two_col">
+                                <label for="form_name">Supplier</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="twocol_section">
+                            <div class="form-group two_col">
+                                <label for="form_name">Gift Range</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group two_col">
+                                <label for="form_name">Age Range</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="twocol_section">
+                            <div class="form-group two_col">
+                                <label for="form_name">Gender</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group two_col">
+                                <label for="form_name">Frequency</label>
+                                <div class="selectdiv">
+                                    <select class="selfselect" id="sel1" name="sellist1">
+                                        <option>All</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right_content">
+                        <h2>Regular Giving Performance (Calendar View)</h2>
+                        <p>Subheading or explainer text to use if needed</p>
+                        <div class="top_content row1">
+                            <div class="container_ positive_view">
+                                <h3>Total Revenue</h3>
+                                <div class="container_content">
+                                    <div class="container_part">
+                                        <div class="left_text">
+                                            <p>2018</p>
+                                            <h5>22.67k</h5>
+                                        </div>
+                                        <div class="vs_part">
+                                            <span class="span_vs">vs</span>
+                                        </div>
+                                        <div class="right_text">
+                                            <p>2019</p>
+                                            <h5>$24.54k</h5>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bottom_part">
+                                        <i class="fas fa-caret-up"></i> Up 10% vs Last Year
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="container_ positive_view">
+                                <h3>Total Signups</h3>
+                                <div class="container_content">
+                                    <div class="container_part">
+                                        <div class="left_text">
+                                            <p>2018</p>
+                                            <h5>14</h5>
+                                        </div>
+                                        <div class="vs_part">
+                                            <span class="span_vs">vs</span>
+                                        </div>
+                                        <div class="right_text">
+                                            <p>2019</p>
+                                            <h5>145</h5>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bottom_part">
+                                        <i class="fas fa-caret-up"></i> Up 105% vs Last Year
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="container_ negative_view">
+                                <h3>Donor Stopped</h3>
+                                <div class="container_content">
+                                    <div class="container_part">
+                                        <div class="left_text">
+                                            <p>2018</p>
+                                            <h5>112</h5>
+                                        </div>
+                                        <div class="vs_part">
+                                            <span class="span_vs">vs</span>
+                                        </div>
+                                        <div class="right_text">
+                                            <p>2019</p>
+                                            <h5>54</h5>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bottom_part">
+                                        <i class="fas fa-caret-down"></i> Down 45% vs Last Year
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="graph_section">
+                            <div class="graph_btns">
+                                <a href="#" class="self_btn active arrow_down">Revenue vs Last Year</a>
+                                <a href="#" class="self_btn grey_btn">Number of Donors vs Last Year</a>
+                            </div>
+                            <figure class="graph_img1">
+                                <img src="images/graph1.png" alt="graph">
+                            </figure>
+                        </div>
+                        <div class="graph_section">
+                            <div class="graph_btns">
+                                <a href="#" class="self_btn active arrow_down">Revenue vs Last Year</a>
+                            </div>
+                            <figure class="graph_img1">
+                                <img src="images/graph2.png" alt="graph">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="footer_container">
+                <span>Fundraising Analytics © Altis Consulting 2019</span>
+                <ul class="footer_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
+</body>
+
+</html>

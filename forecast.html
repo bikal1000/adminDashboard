@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forecast Run</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wholepage">
+        <header>
+            <div class="tophead_container">
+                <div class="top_header">
+                    <figure class="main_logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="main logo">
+                        </a>
+                    </figure>
+                    <div class="top_navmenus">
+                        <input id="nav-toggle" type="checkbox" class="hidden" />
+                        <strong class="burger_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </strong>
+                        <ul class="nav_ul">
+                            <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+                            <li class="active"><a href="forecast.html"><i class="icon-forecast"></i>Forecast</a></li>
+                            <li><a href="analytics_calendar.html"><i class="icon-analytics"></i>Analytics</a></li>
+                            <li><a href="favourite.html"><i class="icon-favourites"></i>Favourites</a></li>
+                            <li><a href="help.html"><i class="icon-help"></i>Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="user_section">
+                        <div class="user_logo">
+                            <i class="fas fa-user"></i>
+                            <span>Hi Jerry!</span><i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="forecast">
+                <div class="bothead_container">
+                    <div class="secondary_menus">
+                        <ul class="sec_ul">
+                            <li class="active"><a href="forecast.html">Run a New Forecast</a> </li>
+                            <li><a href="forecase_new.html">New Forecast Results</a></li>
+                            <li><a href="#">Regular Giving Existing Forecast</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="runforcastform_secttion">
+                    <div class="forecast_container">
+                        <h2>Run a New Forecast</h2>
+                        <div class="fform_wrapper">
+                            <div class="fleft_form">
+                                <div class="fleft_tform">
+                                    <div class="form-group">
+                                        <label class="forecast_label">Channel</label>
+                                        <div class="selectdiv">
+                                            <select class="selfselect" id="sel1" name="sellist1">
+                                                <option>Please select a channel</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="forecast_label">Supplier</label>
+                                        <div class="selectdiv">
+                                            <select class="selfselect" id="sel1" name="sellist1">
+                                                <option>Please select a supplier</option>
+                                                <option>Option 1</option>
+                                                <option>Option 2</option>
+                                                <option>Option 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forecast_btn">
+                                    <a href="#" class="self_btn yellow_btn">Confirm</a>
+                                </div>
+                                <a href="#" class="clear_link">Clear all and start again</a>
+                            </div>
+                            <div class="f_right_form">
+                                <div class="frightt_form">
+                                    <div class="form-group">
+                                        <label class="forecast_label">Expected Average Gift</label>
+                                        <div class="input_div">
+                                            <input type="text" name="text" placeholder="0.00">
+                                        </div>
+                                        <label class="f_label">Helper text if needed</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="forecast_label">No First Gift %</label>
+                                        <div class="input_div">
+                                            <input type="text" name="text" placeholder="0.00">
+                                        </div>
+                                        <label class="f_label">Helper text if needed</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="forecast_label">Cost Per Acquisition</label>
+                                        <div class="input_div">
+                                            <input type="text" name="text" placeholder="0.00">
+                                        </div>
+                                        <label class="f_label">Helper text if needed</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="forecast_label">Expected Average Gift</label>
+                                        <div class="input_div">
+                                            <input type="text" name="text" placeholder="0.00">
+                                        </div>
+                                        <label class="f_label">Helper text if needed</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="forecast_label">No First Gift %</label>
+                                        <div class="input_div">
+                                            <input type="text" name="text" placeholder="0.00">
+                                        </div>
+                                        <label class="f_label">Helper text if needed</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="forecast_label">Cost Per Acquisition</label>
+                                        <div class="input_div">
+                                            <input type="text" name="text" placeholder="0.00">
+                                        </div>
+                                        <label class="f_label">Helper text if needed</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donor_section">
+                    <div class="donor_container">
+                        <h2>Donors per month</h2>
+                        <div class="donor_content">
+                            <div class="donor_table_content">
+                                <table cellpadding="0" cellspacing="0" class="donor_table table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>2019</th>
+                                            <th>2020</th>
+                                            <th>2021</th>
+                                            <th>2022</th>
+                                            <th>2023</th>
+                                            <th>2024</th>
+                                            <th>2025</th>
+                                            <th>2026</th>
+                                            <th>2027</th>
+                                            <th>2028</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Jan</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Feb</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                            <td>15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mar</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apr</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>May</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jun</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jul</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Aug</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sep</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oct</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nov</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dec</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                            <td>20</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="donor_rt_content">
+                                <h2>Quick-fill calculations:</h2>
+                                <div class="assume_sec">
+                                    <span>Assume monthly </span>
+                                    <strong>
+                                        <select class="selfselect" id="sel1" name="sellist1">
+                                            <option>increase</option>
+                                            <option>decrease</option>
+                                        </select>
+                                    </strong>
+                                    <span>of:</span>
+                                </div>
+                                <div class="rad_btn">
+                                    <label for="calc1" class="radio-custom-label"><input class="radio-custom" type="radio" name="calc" id="calc1" checked="checked"><i class="fas fa-check"></i><span>20%</span></label>
+                                    <label for="calc2" class="radio-custom-label"><input class="radio-custom" type="radio" name="calc" id="calc2"><i class="fas fa-check"></i><span>40%</span></label>
+                                    <label for="calc3" class="radio-custom-label"><input class="radio-custom" type="radio" name="calc" id="calc3"><i class="fas fa-check"></i><span>60%</span></label>
+                                    <label for="calc4" class="radio-custom-label"> <input class="radio-custom" type="radio" name="calc" id="calc4"><i class="fas fa-check"></i><span>80%</span></label>
+                                    <label for="calc5" class="radio-custom-label"><input class="radio-custom" type="radio" name="calc" id="calc5"><i class="fas fa-check"></i><span>100%</span></label>
+                                    <label for="calc6" class="radio-custom-label"><input class="radio-custom" type="radio" name="calc" id="calc6"><i class="fas fa-check"></i><span><input class="custom_dis" type="text" name="text">%</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="attr_section">
+                            <h2>Attrition</h2>
+                            <div class="attr_table_section">
+                                <div class="attr_table_data">
+                                    <table cellpadding="0" cellspacing="0" class="attr_table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Month 1</th>
+                                                <th>Month 2</th>
+                                                <th>Month 3</th>
+                                                <th>Month 4</th>
+                                                <th>Month 5</th>
+                                                <th>Month 6</th>
+                                                <th>Month 7</th>
+                                                <th>Month 8</th>
+                                                <th>Month 9</th>
+                                                <th>Month 10</th>
+                                                <th>Month 11</th>
+                                                <th>Month 12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" class="attr_table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Month 1</th>
+                                                <th>Month 2</th>
+                                                <th>Month 3</th>
+                                                <th>Month 4</th>
+                                                <th>Month 5</th>
+                                                <th>Month 6</th>
+                                                <th>Month 7</th>
+                                                <th>Month 8</th>
+                                                <th>Month 9</th>
+                                                <th>Month 10</th>
+                                                <th>Month 11</th>
+                                                <th>Month 12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" class="attr_table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Month 1</th>
+                                                <th>Month 2</th>
+                                                <th>Month 3</th>
+                                                <th>Month 4</th>
+                                                <th>Month 5</th>
+                                                <th>Month 6</th>
+                                                <th>Month 7</th>
+                                                <th>Month 8</th>
+                                                <th>Month 9</th>
+                                                <th>Month 10</th>
+                                                <th>Month 11</th>
+                                                <th>Month 12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" class="attr_table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Month 1</th>
+                                                <th>Month 2</th>
+                                                <th>Month 3</th>
+                                                <th>Month 4</th>
+                                                <th>Month 5</th>
+                                                <th>Month 6</th>
+                                                <th>Month 7</th>
+                                                <th>Month 8</th>
+                                                <th>Month 9</th>
+                                                <th>Month 10</th>
+                                                <th>Month 11</th>
+                                                <th>Month 12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" class="attr_table table">
+                                        <thead>
+                                            <tr>
+                                                <th>Month 1</th>
+                                                <th>Month 2</th>
+                                                <th>Month 3</th>
+                                                <th>Month 4</th>
+                                                <th>Month 5</th>
+                                                <th>Month 6</th>
+                                                <th>Month 7</th>
+                                                <th>Month 8</th>
+                                                <th>Month 9</th>
+                                                <th>Month 10</th>
+                                                <th>Month 11</th>
+                                                <th>Month 12</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                                <td><input type="text" name="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <div class="footer_container">
+                    <span>Fundraising Analytics © Altis Consulting 2019</span>
+                    <ul class="footer_menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>
